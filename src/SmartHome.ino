@@ -10,14 +10,10 @@
 #define lightpin 12   // Pino para acionamento da luz (porta D6)
 
 // Configuração do MQTT
-/*
-#define MQTT_SERVER "192.168.15.8"  // IP do servidor do MQTT
-#define userID      "homemqtt"      // ID do usuário MQTT
-#define MQTTpass    "lordvader"     // Senha para MQTT
-*/
+
 #define MQTT_SERVER "192.168.0.100"  // 192.168.0.100 IP do servidor do MQTT
-#define userID      "homemqtt"      // ID do usuário MQTT
-#define MQTTpass    "lordvader"     // Senha para MQTT 
+#define userID      "user ID"      // ID do usuário MQTT
+#define MQTTpass    "pasword"     // Senha para MQTT 
 
 // Tópicos de publicação do MQTT
 char* topic             = "home/light1";
@@ -37,13 +33,9 @@ int s = 5000; // Tempo em miliseguondos entre as medições
 long m;       // Variável para controle do tempo entre as medições
 
 // Configuração de rede
-/*
-const char* ssid      = "SKYNET 2.0";
-const char* password  = "62x37Gz6kn";
-*/
 
-const char* ssid      = "Skynet";
-const char* password  = "4d894sYB";
+const char* ssid      = "Nome da Rede";
+const char* password  = "Senha da rede";
 
 void callback(char* topic, byte* payload, unsigned int length);
 
